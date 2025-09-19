@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List Data from </title>
+    <style>
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2><center>List of Feedback</center></h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>MESSAGE</th>
+
+            </tr>
+        </thead>
+        <tbody id="dataRows">
+
+        </tbody>
+    </table>
+    <script>
+        fetch('getData.jsp')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('dataRows').innerHTML = data;
+            })
+            .catch(error => console.error('Error fetching data:', error));
+    </script>
+</body>
+</html>

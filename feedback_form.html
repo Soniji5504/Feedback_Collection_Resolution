@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home page</title>
+    <link rel="stylesheet" href="CSS/style1.css" />
+  </head>
+  <body style="background-color: rgb(137, 209, 209)" style>
+    <header>
+      <h1>Provide Your valuable Feedback</h1>
+      <nav>
+        <ul>
+          <li><a href="#feedback">Feedback</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About Us</a></li>
+        </ul>
+        <button class="top-right-button">
+          <a href="adminacess.html" style="text-decoration: none; color: white"
+            >Admin acess</a
+          >
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section id="feedback">
+        <h2>Feedback</h2>
+        <form action="submitFeedback.jsp" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Share your Feedback:</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            cols="50"
+            required
+          ></textarea
+          ><br /><br />
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Contact the author of this page:</p>
+
+<address>
+  <a href="mailto:jim@example.com">dhruvsoniji665588@gmail.com</a><br />
+  <a href="tel:+14155550132">+91 7024665588</a>
+</address>
+
+      </section>
+    </main>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p>
+        Welcome to My Project. We are dedicated to providing the best service
+        possible. Our team is passionate and committed to helping you achieve
+        your goals.
+      </p>
+    </section>
+    <footer>
+      <p>&copy; 2024 My Project. All rights reserved.</p>
+    </footer>
+</body>
+</html>
